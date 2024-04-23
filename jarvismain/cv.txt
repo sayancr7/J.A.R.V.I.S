@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table cellspacing="20">
+        <tr>
+            <td>
+                <h1>
+                    Your Name
+                </h1>
+                <p>
+                    Student at techno international batanagar college
+                </p>
+                <p>
+                    I am currently pursuing <b>BTECH degree in CSE</b>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <hr><h3>
+        EDUCATIONAL QUALIFICATION
+    </h3><TABLE>
+        <thead>
+            <tr>
+                <th>YEAR OF PASSING</th>
+                <TH>INSTITUTE</TH>
+                <TH>DEGREE</TH>
+            </tr>
+        </thead>
+        <TBOdy>
+            <tr>
+                <td>2020-Present</td>
+                <td>Techno International Batanagar</td>
+                <td>BTECH (CSE)</td>
+            </tr><tr>
+                <td>2020</td>
+                <td>Your School Name</td>
+                <td>Class 12</td>
+            </tr>
+            <tr><td>2018</td>
+                <td>Your School name</td>
+                <td>Class 10</td>
+            </tr>
+
+        </TBOdy>
+    </TABLE>
+<hr><h3>WORK EXPERIENCE</h3>
+<P>Currently a student</P>
+<hr><h3>
+    SKILLS
+</h3>
+<table><tr><td>
+<table><tr><td>
+    WEB DEVELOPMENT
+</td><td>
+    ***
+</td>
+</tr>
+<tr>
+    <td>
+        C LANGUAGE
+    </td><td>
+        *****
+    </td>
+</tr>
+<tr>
+    <td>FOOTBALL</td>
+    <td>*****</td>
+</tr>
+</table>
+</td></tr></table>
+</body>
+</html>

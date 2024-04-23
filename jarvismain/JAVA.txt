@@ -1,0 +1,228 @@
+#ADD TWO NUMBER......
+CODE:
+public class SumOfNumbers1  
+{  
+public static void main(String args[])   
+{  
+int n1 = 225, n2 = 115, sum;  
+sum = n1 + n2;  
+System.out.println("The sum of numbers is: "+sum);  
+}  
+} 
+OUTPUT:The sum of numbers is: 340
+#SWAP TWO VALUES.......
+CODE:
+import java.util.*;  
+class Swap   
+{  
+    public static void main(String a[])   
+    {   
+        System.out.println("Enter the value of x and y");  
+        Scanner sc = new Scanner(System.in);  
+        /*Define variables*/  
+        int x = sc.nextInt();  
+        int y = sc.nextInt();  
+        System.out.println("before swapping numbers: "+x +" "+ y);  
+       /*Swapping*/  
+        x = x + y;   
+        y = x - y;   
+        x = x - y;   
+        System.out.println("After swapping: "+x +"  " + y);   
+    }   
+}  
+output:Enter the value of x and y
+23  43
+before swapping numbers: 23  43
+After swapping:  43  23
+#SWAP TWO NUMBER USING 3RD VARIABLE......
+CODE:
+import java.util.*;  
+class Swap_With {  
+    public static void main(String[] args) {  
+       int x, y, t;// x and y are to swap   
+       Scanner sc = new Scanner(System.in);  
+       System.out.println("Enter the value of X and Y");  
+       x = sc.nextInt();  
+       y = sc.nextInt();  
+       System.out.println("before swapping numbers: "+x +"  "+ y);  
+       /*swapping */  
+       t = x;  
+       x = y;  
+       y = t;  
+       System.out.println("After swapping: "+x +"   " + y);  
+       System.out.println( );  
+    }    
+}  
+OUTPUT:Enter the value of X and Y
+2
+3
+before swapping numbers: 2   3
+After swapping: 3   2
+#CELCIUS TO FAHRENHEIT......
+CODE:
+public class temperature  
+ {  
+   public static void main (String args[])  
+    { float Fahrenheit, Celsius;  
+          Celsius= 13;  
+          Fahrenheit =((Celsius*9)/5)+32;  
+          System.out.println("Temperature in Fahrenheit is: "+Fahrenheit);  
+    }}  
+OUTPUT:Temperature in Fahrenheit is: 55.4
+#GROSS SALARY....
+CODE:
+import java.util.Scanner;
+public class salary
+{
+public static void main(String args[])
+{
+double basic,da,hra,gross;
+System.out.println("Enter Basic salary of the employee\n");
+Scanner obj1=new Scanner(System.in);
+basic=obj1.nextDouble();
+da=40*basic/100;
+hra=20*basic/100;
+gross= basic+da+hra;
+System.out.println("The D.A of the basic salary of the employee is:" +da);
+System.out.println("The H.R.A of the basic salary of the employee is:" +hra);
+System.out.println("The Gross salary of the employee is:" +gross);
+}
+}
+OUTPUT:Enter Basic salary of the employee:15000
+The D.A of the basic salary of the employee is:6000.0
+The H.R.A of the basic salary of the employee is:3000.0
+The Gross salary of the employee is:24000.0
+#ODD OR  EVEN......
+CODE:
+import java.util.Scanner;
+
+public class EvenOdd {
+
+    public static void main(String[] args) {
+
+        Scanner reader = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = reader.nextInt();
+
+        if(num % 2 == 0)
+            System.out.println(num + " is even");
+        else
+            System.out.println(num + " is odd");
+    }
+}
+OUTPUT:Enter a number: 12
+12 is even
+#CONSTRUCTOR OVERLOADING....
+CODE:
+public class Student {  
+//instance variables of the class  
+int id;  
+String name;  
+  
+Student(){  
+System.out.println("this a default constructor");  
+}  
+  
+Student(int i, String n){  
+id = i;  
+name = n;  
+}  
+  
+public static void main(String[] args) {  
+//object creation  
+Student s = new Student();  
+System.out.println("\nDefault Constructor values: \n");  
+System.out.println("Student Id : "+s.id + "\nStudent Name : "+s.name);  
+  
+System.out.println("\nParameterized Constructor values: \n");  
+Student student = new Student(10, "David");  
+System.out.println("Student Id : "+student.id + "\nStudent Name : "+student.name);  
+}  
+}  
+OUTPUT:this a default constructor
+
+
+Default Constructor values: 
+
+
+Student Id : 0
+Student Name : null
+
+
+Parameterized Constructor values: 
+
+
+Student Id : 10
+Student Name : David
+#METHOD OVERLOADING.....
+CODE:
+class Adder{  
+static int add(int a,int b){return a+b;}  
+static int add(int a,int b,int c){return a+b+c;}  
+}  
+class TestOverloading1{  
+public static void main(String[] args){  
+System.out.println(Adder.add(11,11));  
+System.out.println(Adder.add(11,11,11));  
+}} 
+OUTPUT:22
+33
+#IMPLEMENTATION OF STATIC KEYWORD AND STATIC FUNCTION....
+CODE:
+class Test {
+    int roll;
+    String name;
+    static String college="TIB";
+    Test(int x, String y){
+        roll=x;
+        name=y;
+    }
+    void display(){
+        System.out.println("Roll:"+roll);
+        System.out.println("Name"+name);
+        System.out.println("College"+college);
+        
+    }
+    static void change(){
+        college="Techno International Batanagar";
+    }
+    public static void main(String args[]){
+        Test s1=new Test(51,"Sayan");
+        s1.display();
+        Test.change();
+        Test s2=new Test(62,"Rimsha");
+        s2.display();
+    }
+}
+OUTPUT:Roll:51NameSayan
+CollegeTIB
+Roll:62
+NameRimsha
+CollegeTechno International Batanagar
+#FACTORIAL USING SCANNER CLASS.....
+CODE:
+import java.util.*;
+public class Main
+{
+     public static void main(String []args)
+     {
+        //Take input from the user
+        //Create an instance of the Scanner Class
+        Scanner sc=new Scanner(System.in);
+        //Declare and Initialize the variable
+        System.out.println("Enter the number: ");
+        int num=sc.nextInt();
+        int i=1,fact=1;
+        while(i<=num)
+        {
+            fact=fact*i;
+            i++;
+        }
+        System.out.println("Factorial of the number: "+fact);  
+     }   
+}
+OUTPUT:Enter the number: 5
+Factorial of the number: 120
+
+
